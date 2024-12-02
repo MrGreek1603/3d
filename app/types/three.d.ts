@@ -1,13 +1,13 @@
-import { Object3D } from 'three';
+// import { Object3D } from 'three';
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      primitive: any;
-      ambientLight: any;
-      spotLight: any;
-    }
-  }
-}
+// declare global {
+//   namespace JSX {
+//     interface IntrinsicElements {
+//       primitive: any;
+//       ambientLight: any;
+//       spotLight: any;
+//     }
+//   }
+// }
 
-export {}; 
+// export {}; 

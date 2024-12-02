@@ -2,8 +2,8 @@
 
 import { useState, Suspense } from 'react';
 import DragDropZone from './components/DragDropZone';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+
+import { useGLTF } from '@react-three/drei';
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 function Model({ url }: { url: string }) {
@@ -89,17 +89,6 @@ export default function Home() {
 
           {modelUrl && (
             <div className="space-y-4">
-            {/* //   <h2 className="text-xl font-semibold">Generated 3D Model</h2>
-            //   <div className="h-[400px] bg-gray-100 rounded-lg overflow-hidden">
-            //     <Canvas camera={{ position: [0, 0, 5] }}>
-            //       <Suspense fallback={null}>
-            //         <ambientLight intensity={1} />
-            //         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-            //         <Model url={modelUrl} />
-            //         <OrbitControls />
-            //       </Suspense>
-            //     </Canvas>
-            //   </div> */}
               <div className="flex justify-center">
                 <a
                   href={modelUrl}
