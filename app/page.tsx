@@ -1,15 +1,7 @@
 'use client';
 
-import { useState, Suspense } from 'react';
+import { useState } from 'react';
 import DragDropZone from './components/DragDropZone';
-
-import { useGLTF } from '@react-three/drei';
-import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader.js';
-
-function Model({ url }: { url: string }) {
-  const gltf = useGLTF(url) as unknown as GLTF;
-  return <primitive object={gltf.scene} />;
-}
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
