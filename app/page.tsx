@@ -89,17 +89,17 @@ export default function Home() {
 
           {modelUrl && (
             <div className="space-y-4">
-              <h2 className="text-xl font-semibold">Generated 3D Model</h2>
-              <div className="h-[400px] bg-gray-100 rounded-lg overflow-hidden">
-                <Canvas camera={{ position: [0, 0, 5] }}>
-                  <Suspense fallback={null}>
-                    <ambientLight intensity={0.5} />
-                    <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-                    <Model url={modelUrl} />
-                    <OrbitControls />
-                  </Suspense>
-                </Canvas>
-              </div>
+            {/* //   <h2 className="text-xl font-semibold">Generated 3D Model</h2>
+            //   <div className="h-[400px] bg-gray-100 rounded-lg overflow-hidden">
+            //     <Canvas camera={{ position: [0, 0, 5] }}>
+            //       <Suspense fallback={null}>
+            //         <ambientLight intensity={1} />
+            //         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+            //         <Model url={modelUrl} />
+            //         <OrbitControls />
+            //       </Suspense>
+            //     </Canvas>
+            //   </div> */}
               <div className="flex justify-center">
                 <a
                   href={modelUrl}
